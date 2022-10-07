@@ -1,6 +1,7 @@
 .new-item {
     display:grid;
-    grid-template-columns: 90% 10%;    
+    grid-template-columns: 90% 10%;   
+    min-height: 40px; 
     grid-template-rows: auto;
     align-items: center;
     border-bottom: 2px solid rgb(194, 194, 194);
@@ -16,19 +17,18 @@
 }
 
 .new-item-button {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center;
-    width: 25px;
-    height: 25px;
-    background-color: rgb(10, 191, 97);
-    color: white;
-    font-size: 25px;
-    line-height: 0;
-    font-weight: bold;
-    cursor:pointer;
+  background-color:rgb(10, 191, 97);
+  color:white;
+  height:25px;
+  width:25px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;;
+  line-height:20px;
+  border-radius: 5px;
+  cursor:pointer;
+  margin-left: auto;
+  margin-right:10px;
 }
 
 .new-item-button:active {
@@ -37,41 +37,28 @@
 
 .item {
     display:grid;
-    grid-template-columns: 90% 10%;    
+    grid-template-columns: 5% 90% 5%;    
     grid-template-rows: auto;
-    align-items: center;
+    padding-top: 3px;
+    min-height:40px;
     border-bottom: 2px solid rgb(194, 194, 194);
  }
 
-.item-content {
+/* .item-content {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 5px;;
-}
+} */
 
 .item-title {
     font-size: 15px;
     font-weight: bold;
-    padding: 3px;
     margin:0;
-}
-
-.item-buttons {
-    position: absolute;
-    bottom: 0;
-    right: 5px;    
-    display: flex;
-    gap: 5px;
 }
 
 .item-buttons > i > span {
     font-size:11px;
-}
-
-.new-item-buttons {
-    align-self: flex-end;
-    margin-bottom: 3px;
 }
 
 .close-button {

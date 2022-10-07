@@ -3,6 +3,7 @@ import {useState, useRef} from 'react';
 import AutosizeTextArea from './autosizeTextArea';
 
 function NewItem(props){
+
     const[itemData, setItemData] = useState({
         title: ''
     });
@@ -20,6 +21,12 @@ function NewItem(props){
         })
       }
 
+    function cleartextArea(){
+        setItemData({
+            title: ''
+        });
+    }
+
     return(
         <div className="new-item">
             <div>                
@@ -33,7 +40,7 @@ function NewItem(props){
                     ref={textAreaRef}
                     rows={1} />
             </div>
-            <div onClick={() => props.newItem(itemData.title)} className="new-item-button">
+            <div onClick={() => {props.newItem(itemData.title); cleartextArea()}} className="new-item-button">
                 +
             </div>
         </div>

@@ -10,13 +10,11 @@ function Snacklst(props){
 
     function newItem(title){
         if(title){
-            console.log(`título: ${title}`);
             setItems([...items, {
                 id: items.length++,
                 title: title,
                 votes: 0   
             }]);
-            console.log(items);
         }   
     }
   
@@ -36,7 +34,6 @@ function Snacklst(props){
       });
     }
   
-    // console.log(items);
     const allItems = items.map((item) => {
       if(items.length > 0){
         return <Item key={item.id} 
