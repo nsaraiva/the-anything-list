@@ -2,7 +2,7 @@
    background-color: rgb(242, 242, 242);
    height:50px;
    display:grid;
-   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));    
+   grid-template-columns: fit-content(5%) 1fr fit-content(5%);
    grid-template-rows: auto;
    align-items: center;
    box-shadow: 0 2px 5px rgb(194, 194, 194);
