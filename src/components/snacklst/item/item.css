@@ -1,24 +1,47 @@
 .new-item {
-    width: 450px;
-    height: 'auto';
-    border: 3px solid #009886;
-    margin:auto;
-    margin-top: 10px;
+    display:grid;
+    grid-template-columns: 90% 10%;    
+    grid-template-rows: auto;
+    align-items: center;
+    border-bottom: 2px solid rgb(194, 194, 194);
+}
+
+.new-item > div > textarea {
+    outline: none;
+    border: none;
+    width: 100%;
+    resize: none;
+    word-wrap: break-word;
+    margin-left:3px;
+}
+
+.new-item-button {
     display: flex;
-    flex-direction: column;
-}
-.item {
     position: relative;
-    width: 450px;
-    height: auto;
-    min-height: 60px;
-    background-color: #009886;
-    border: 3px solid #009886;
-    color:white;
-    margin:0 auto 10px auto;
-    padding: 0;
-    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(10, 191, 97);
+    color: white;
+    font-size: 25px;
+    line-height: 0;
+    font-weight: bold;
+    cursor:pointer;
 }
+
+.new-item-button:active {
+    background-color: rgb(0, 134, 65);
+}
+
+.item {
+    display:grid;
+    grid-template-columns: 90% 10%;    
+    grid-template-rows: auto;
+    align-items: center;
+    border-bottom: 2px solid rgb(194, 194, 194);
+ }
 
 .item-content {
     display:flex;
@@ -29,18 +52,9 @@
 
 .item-title {
     font-size: 15px;
+    font-weight: bold;
     padding: 3px;
     margin:0;
-    color:white;
-}
-
-.new-item > textarea {
-    outline: none;
-    border: none;
-    width: 92%;
-    resize: none;
-    word-wrap: break-word;
-    margin-left:3px;
 }
 
 .item-buttons {

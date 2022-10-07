@@ -1,0 +1,28 @@
+.title {
+   background-color: rgb(242, 242, 242);
+   height:50px;
+   display:grid;
+   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));    
+   grid-template-rows: auto;
+   align-items: center;
+   box-shadow: 0 2px 5px rgb(194, 194, 194);
+   margin-bottom: 8px;
+}
+
+.title > div {
+    display:inline-block;
+    position: relative;
+}
+
+.column-1 {
+    padding:0 5px;
+}
+
+.column-2 {
+    text-align: center;
+}
+
+.column-2 > h3 {
+    color:red;
+    margin: 0;
+}
