@@ -1,6 +1,6 @@
 .new-item {
     display:grid;
-    grid-template-columns: 1fr fit-content(5%);
+    grid-template-columns: 1fr fit-content(10%);
     min-height: 40px; 
     grid-template-rows: auto;
     align-items: center;
@@ -37,13 +37,29 @@
 
 .item {
     display:grid;
-    grid-template-columns: fit-content(5%) 1fr fit-content(5%);   
+    grid-template-columns: 5% 75% 20%;
     grid-template-rows: auto;
     padding-top: 3px;
     min-height:40px;
     border-bottom: 2px solid rgb(194, 194, 194);
+    text-align: justify;
  }
 
+.item-buttons {
+    margin-left:auto;
+    margin-right:10px;
+    display: grid;
+    grid-template-rows: repeat(auto-fit,(minmax(25px, 1fr)));
+}
+
+.like-button {
+    margin-top:auto;
+    margin-bottom:2px;
+}
+
+.item-buttons > i > span {
+    font-size:5px;
+}
 /* .item-content {
     display:flex;
     flex-direction: row;

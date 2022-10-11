@@ -4,12 +4,20 @@ function Item(props) {
     console.log(props);
     return (
             <div className="item">
-            <div></div>
+                <div className="column-1"></div>
                 <div className="item-content">
                     <p className="item-title">{props.title}</p>
                 </div>
                 <div className="item-buttons">
-                <i className="fa-regular fa-thumbs-up"></i>
+                    <div>ok</div>
+                    <div className="like-button">
+                        <i className="fa-regular fa-thumbs-up">
+                            <span> 0 </span>
+                        </i>
+                        <i class="fa-regular fa-comment">
+                            <span> 0 </span>
+                        </i>
+                    </div>
                 </div>
             </div>
     );
