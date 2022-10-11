@@ -14,7 +14,7 @@ function Item(props) {
                         <i className="fa-regular fa-thumbs-up">
                             <span> 0 </span>
                         </i>
-                        <i class="fa-regular fa-comment">
+                        <i className="fa-regular fa-comment">
                             <span> 0 </span>
                         </i>
                     </div>
