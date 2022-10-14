@@ -1,7 +1,5 @@
 import {useState, cloneElement, Children} from 'react';
 
-import SnacklstView from '../views/SnacklstView.js';
-
 export default function SnacklstController({children}){
 
     const [items, setItems] = useState([]);

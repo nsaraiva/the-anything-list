@@ -1,7 +1,7 @@
 
-import Title from '../components/snacklst/title/title.js';
-import NewItem from '../components/snacklst/item/newItem.js';
-import Item from '../components/snacklst/item';
+import Title from './TitleView.js';
+import NewItemController from '../controllers/NewItemController.js';
+import Item from './ItemView';
 
 export default function SnacklstView(props){
     
@@ -23,7 +23,7 @@ export default function SnacklstView(props){
       <div className="snacklst">
           <Title />
           <div className="items">
-              <NewItem newItem={props.newItem}/>
+              <NewItemController newItem={props.newItem} items={props.items} />
               {allItems}
           </div>
       </div>

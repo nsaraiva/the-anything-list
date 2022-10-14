@@ -1,6 +1,6 @@
-import './title.css'
+import '../assets/css/title.css'
 
-function Title(){
+function TitleView(){
     return(
         <div className="title">
             <div className="column-1">
@@ -14,4 +14,4 @@ function Title(){
     );
 }
 
-export default Title;
+export default TitleView;

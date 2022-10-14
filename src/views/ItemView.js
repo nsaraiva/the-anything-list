@@ -1,4 +1,4 @@
-import './item.css';
+import '../assets/css/item.css';
 
 function Item(props) {    
     console.log(props);
